@@ -21,7 +21,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "precommit": "pretty-quick --staged"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,6 +37,9 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "fetch-mock": "^7.2.5",
+    "husky": "^1.1.4",
+    "prettier": "1.15.2",
+    "pretty-quick": "^1.8.0",
     "redux-mock-store": "^1.5.3"
   }
 }
