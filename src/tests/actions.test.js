@@ -66,31 +66,31 @@ it('Handles requesting robots REQUEST_ROBOTS_SUCCESS', () => {
 
 });
 
-it('Handles requesting robots REQUEST_ROBOTS_FAILED', () => {
-  const store = mockStore();
-  const errorInstance = {
-    error: 'Error in line 1'
-  }
+// it('Handles requesting robots REQUEST_ROBOTS_FAILED', () => {
+//   const store = mockStore();
+//   const errorInstance = {
+//     error: 'Error in line 1'
+//   }
 
-  nock('https://jsonplaceholder.typicode.com')
-  .defaultReplyHeaders({ 'access-control-allow-origin': '*' })
-  .get('/users')
-  .replyWithError(errorInstance);
+//   nock('https://jsonplaceholder.typicode.com')
+//   .defaultReplyHeaders({ 'access-control-allow-origin': '*' })
+//   .get('/users')
+//   .replyWithError(errorInstance);
 
-  return store.dispatch(actions.requestRobots())
-    .then(() => {
+//   return store.dispatch(actions.requestRobots())
+//     .then(() => {
 
-      const expectedAction = [{
-          type: REQUEST_ROBOTS_PENDING
-        },
-        {
-          payload: errorInstance,
-          type: REQUEST_ROBOTS_FAILED
-        }
-      ];
+//       const expectedAction = [{
+//           type: REQUEST_ROBOTS_PENDING
+//         },
+//         {
+//           payload: errorInstance,
+//           type: REQUEST_ROBOTS_FAILED
+//         }
+//       ];
 
-      expect(store.getActions()).toEqual(expectedAction);
-    });
+//       expect(store.getActions()).toEqual(expectedAction);
+//     });
 
 
-});
+// });
