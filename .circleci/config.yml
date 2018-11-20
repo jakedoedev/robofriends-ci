@@ -28,4 +28,6 @@ workflows:
     jobs:
       - build
       - coverage
-      - test
+      - test:
+        requires:
+          - coverage
