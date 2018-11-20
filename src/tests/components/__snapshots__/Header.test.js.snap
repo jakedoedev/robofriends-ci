@@ -26,6 +26,9 @@ ShallowWrapper {
         <CounterButton
           color="red"
         />,
+        <CounterButton
+          color="red"
+        />,
       ],
     },
     "ref": null,
@@ -41,6 +44,17 @@ ShallowWrapper {
         "ref": null,
         "rendered": " Robofriends ",
         "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "color": "red",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -71,6 +85,9 @@ ShallowWrapper {
           <CounterButton
             color="red"
           />,
+          <CounterButton
+            color="red"
+          />,
         ],
       },
       "ref": null,
@@ -86,6 +103,17 @@ ShallowWrapper {
           "ref": null,
           "rendered": " Robofriends ",
           "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "color": "red",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,
