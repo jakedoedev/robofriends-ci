@@ -29,5 +29,5 @@ workflows:
       - build
       - coverage
       - test:
-        - requires:
+        requires:
           - coverage
